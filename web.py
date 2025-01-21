@@ -24,12 +24,10 @@ for index, todo in enumerate(todos):
         funcs.write_todos(todos)
         del st.session_state[todo]
         st.rerun(scope="app")
-        print("reurn")
+        #print("reurn")
 
 
 st.text_input(label="temp", label_visibility="hidden", placeholder="Add new todo...", on_change=add_todo,
               key='new_todo')
 
-print("Hello world")
-
-st.session_state
+#st.session_state
